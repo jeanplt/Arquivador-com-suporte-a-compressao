@@ -168,6 +168,18 @@
     mostrou-se o mais viável, com testes apresentando resultados 
     positivos mesmo com arquivos maiores.  
 
+    Função void option_z: Função de criar, a partir de um arquivo .vc existente, 
+    um segundo arquivo .vc que contenha apenas um subconjunto selecionado dos 
+    membros do primeiro arquivo. A execução da operação de derivação deve segue 
+    o seguinte formato: vinac -z <archive> [membro1 membro2 ...].
+    O <archive> refere-se a um arquivo .vc existente; se o arquivo não existir, 
+    a operação deve ser imediatamente interrompida. A lista [membro1 membro2 ...] 
+    indica o conjunto de membros do <archive> que deverão compor o novo arquivo 
+    derivado. Todos os membros listados devem existir no <archive>; caso contrário, 
+    a operação é interrompida imediatamente. A saída da operação -z é um novo 
+    arquivo .vc válido, com o mesmo nome do <archive>, acrescido de "_z", contendo 
+    apenas os membros indicados na operação.
+
     # O programa principal vina.c: A função main foi pensada de forma 
     relativamente simples, pois com o intuito de mantê-la mais enxuta, foram 
     feitos sete condicionais, sendo o primeiro para verificar se o comando 
