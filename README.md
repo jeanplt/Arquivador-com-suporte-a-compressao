@@ -1,4 +1,4 @@
-# A1 - O Arquivador VINAc
+# O Arquivador VINAc
 
 # Autoria do software
 
